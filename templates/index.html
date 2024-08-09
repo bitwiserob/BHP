@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Boston Housing Price Prediction</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Boston Housing Price Prediction</h1>
+      <form method="post">
+        <label for="CRIM">CRIM:</label>
+        <input type="text" name="CRIM" id="CRIM" required><br>
+
+        <label for="ZN">ZN:</label>
+        <input type="text" name="ZN" id="ZN" required><br>
+
+        <label for="INDUS">INDUS:</label>
+        <input type="text" name="INDUS" id="INDUS" required><br>
+
+        <label for="CHAS">CHAS:</label>
+        <input type="text" name="CHAS" id="CHAS" required><br>
+
+        <label for="NOX">NOX:</label>
+        <input type="text" name="NOX" id="NOX" required><br>
+
+        <label for="RM">RM:</label>
+        <input type="text" name="RM" id="RM" required><br>
+
+        <label for="AGE">AGE:</label>
+        <input type="text" name="AGE" id="AGE" required><br>
+
+        <label for="DIS">DIS:</label>
+        <input type="text" name="DIS" id="DIS" required><br>
+
+        <label for="RAD">RAD:</label>
+        <input type="text" name="RAD" id="RAD" required><br>
+
+        <label for="TAX">TAX:</label>
+        <input type="text" name="TAX" id="TAX" required><br>
+
+        <label for="PTRATIO">PTRATIO:</label>
+        <input type="text" name="PTRATIO" id="PTRATIO" required><br>
+
+        <label for="B">B:</label>
+        <input type="text" name="B" id="B" required><br>
+
+        <label for="LSTAT">LSTAT:</label>
+        <input type="text" name="LSTAT" id="LSTAT" required><br>
+
+        <button type="submit">Predict</button>
+      </form>
+      {% if prediction is not none %}
+        <h2>Predicted Price: {{ prediction }}</h2>
+      {% endif %}
+    </div>
+  </body>
+</html>
